@@ -9,7 +9,6 @@ services:
             - SUBDOMAIN
             - ZONE
             - API_KEY
-
   reverse-proxy:
     image: traefik:v2.11
     depends_on:
