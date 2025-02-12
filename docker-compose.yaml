@@ -25,7 +25,7 @@ services:
       - --entrypoints.web.http.redirections.entryPoint.to=websecure
       - --entrypoints.web.http.redirections.entryPoint.scheme=https
       # Enable ACME for Let's Encrypt
-      - --certificatesResolvers.myresolver.acme.email=${EMAIL}
+      - --certificatesResolvers.myresolver.acme.email=${ACME_EMAIL}
       - --certificatesResolvers.myresolver.acme.storage=/letsencrypt/acme.json
       - --certificatesResolvers.myresolver.acme.tlsChallenge=true
     ports:
